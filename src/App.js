@@ -62,7 +62,7 @@ function App() {
           <br />
           <h2 className="display-4">Recovered <br /><span style={{ color: "#8ACA2B" }}>{statsData.cases.recovered}</span></h2>
           <br />
-          <h2 className="display-4">Deaths <br /><span style={{ color: "#ffd230" }}>{statsData.deaths.total}</span></h2>
+          <h2 className="display-4">Deaths <br /><span style={{ color: "rgb(255, 38, 27)" }}>{statsData.deaths.total}</span></h2>
           <br />
           <br />
           <div className="container">
