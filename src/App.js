@@ -74,7 +74,7 @@ function App() {
   }
 
   return (
-    <div className="">
+    <div>
       {!isLoading ?
         <>
           <div className="container d-flex justify-content-center">
@@ -93,8 +93,7 @@ function App() {
             </div>
           </div>
           {Object.keys(statsData).length > 0 ?
-            <>
-              
+            <> 
               <br />
               <h1 className="display-3"> 
                   <b>{statsData.country}</b>
@@ -103,7 +102,7 @@ function App() {
                 <small>Last updated : {new Date(statsData.time).toLocaleString()}</small>
               </p>
               <br />
-              <h2 className="display-4">Total Coronavirus Cases<br /><span style={{ color: "rgb(48, 247, 238)" }}>{statsData.cases.total}</span></h2>
+              <h2 className="display-4">Total Cases<br /><span style={{ color: "rgb(48, 247, 238)" }}>{statsData.cases.total}</span></h2>
               <br />
               <h2 className="display-4">Recovered <br /><span style={{ color: "#8ACA2B" }}>{statsData.cases.recovered}</span></h2>
               <br />

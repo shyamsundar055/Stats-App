@@ -1,6 +1,5 @@
 html,
-body {
-  height: 100%;
+body { 
   background-color: #333;
 }
 
@@ -15,8 +14,4 @@ body {
 #root{
   width: 100%;
   height: 100%;
-}
-
-.cover-container {
-  max-width: 40em;
-}
+} 
