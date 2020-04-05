@@ -74,7 +74,7 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       {!isLoading ?
         <>
           <div className="container d-flex justify-content-center">
@@ -130,7 +130,7 @@ function App() {
         "Loading..."
       }
 
-    </div>
+    </>
   );
 }
 
