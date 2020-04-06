@@ -79,9 +79,9 @@ function Graph(props) {
 
             if (allCountriesData.length > 0) {
                 group.append("text")
-                    .attr("x", 150)
+                    .attr("x", 100)
                     .attr("y", 25)
-                    .attr("font-size", "20px")
+                    .attr("font-size", "18px")
                     .attr("font-weight", "300")
                     .attr("fill", "#fff")
                     .text(`Top ${allCountriesData.length} Countries with active cases`);
@@ -113,7 +113,7 @@ function Graph(props) {
 
 
     return (
-        <div className="col-md-6 text-center">
+        <div className="col-md-6">
             <br />
             <svg width="100%" height="750" ref={d3Container}>
             </svg>
