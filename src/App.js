@@ -91,6 +91,7 @@ function App() {
               <div className="row">
                 <div className="col-lg-6 text-center">
                   <br />
+                  <br />
                   <div className="d-flex justify-content-center">
                     <select className="form-control" value={selectedCountry} onChange={changeSelectedCountry} style={{ width: "250px" }}>
                       {
@@ -99,31 +100,33 @@ function App() {
                         )
                       }
                     </select>
-                  </div>
+                  </div> 
                   <br />
-                  <h1 className="display-3">
+                  <br />
+                  <h1 className="display-3 country">
                     <b>{statsData.country}</b>
-                  </h1>
+                  </h1> 
                   <p>
                     <small>Last updated : {new Date(statsData.time).toLocaleString()}</small>
-                  </p>
+                  </p> 
                   <br />
-                  <h2 className="display-4">Total Cases<br /><span style={{ color: "rgb(48, 247, 238)" }}>{statsData.cases.total}</span></h2>
                   <br />
-                  <h2 className="display-4">Recovered <br /><span style={{ color: "#8ACA2B" }}>{statsData.cases.recovered}</span></h2>
+                  <h2 className="display-4 countryData">Total Cases<br /><span style={{ color: "rgb(48, 247, 238)" }}>{statsData.cases.total}</span></h2>
                   <br />
-                  <h2 className="display-4">Deaths <br /><span style={{ color: "rgb(255, 38, 27)" }}>{statsData.deaths.total}</span></h2>
+                  <h2 className="display-4 countryData">Recovered <br /><span style={{ color: "#8ACA2B" }}>{statsData.cases.recovered}</span></h2>
+                  <br />
+                  <h2 className="display-4 countryData">Deaths <br /><span style={{ color: "rgb(255, 38, 27)" }}>{statsData.deaths.total}</span></h2>
                   <br />
                   <div className="container">
                     <div className="row">
-                      <div className="col-sm">
-                        <p className="h3">Active Cases<br /><span style={{ color: "#ffd230" }}>{statsData.cases.active}</span></p>
+                      <div className="col-sm ">
+                        <p className="countrySubData">Active Cases<br /><span style={{ color: "#ffd230" }}>{statsData.cases.active}</span></p>
                       </div>
                       <div className="col-sm">
-                        <p className="h3">New Cases<br /><span style={{ color: "#ffd230" }}>{statsData.cases.new ? statsData.cases.new : "-"}</span></p>
+                        <p className="countrySubData">New Cases<br /><span style={{ color: "#ffd230" }}>{statsData.cases.new ? statsData.cases.new : "-"}</span></p>
                       </div>
                       <div className="col-sm">
-                        <p className="h3">New Deaths<br /><span style={{ color: "#ffd230" }}>{statsData.deaths.new ? statsData.deaths.new : "-"}</span></p>
+                        <p className="countrySubData">New Deaths<br /><span style={{ color: "#ffd230" }}>{statsData.deaths.new ? statsData.deaths.new : "-"}</span></p>
                       </div>
                     </div>
                   </div>
