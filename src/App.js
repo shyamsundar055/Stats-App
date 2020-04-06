@@ -89,7 +89,7 @@ function App() {
           {Object.keys(statsData).length > 0 ?
             <div className="container-fluid">
               <div className="row">
-                <div className="col-md-6 text-center">
+                <div className="col-lg-6 text-center">
                   <br />
                   <div className="d-flex justify-content-center">
                     <select className="form-control" value={selectedCountry} onChange={changeSelectedCountry} style={{ width: "250px" }}>
@@ -126,15 +126,12 @@ function App() {
                         <p className="h3">New Deaths<br /><span style={{ color: "#ffd230" }}>{statsData.deaths.new ? statsData.deaths.new : "-"}</span></p>
                       </div>
                     </div>
-
                   </div>
-
                 </div>
                 <Graph allCountriesStatsData={allCountriesStatsData} />
               </div>
               <div className="row">
                 <div className="col-md-12 text-center">
-                  <br />
                   <footer className="text-center text-muted font-weight-light">
                     <span style={{ fontSize: "12px" }} >
                       Data provider <a href="https://api-sports.io/documentation/covid-19" target="_blank" rel="noopener noreferrer">API-SPORTS</a>&nbsp;&nbsp;|&nbsp;
