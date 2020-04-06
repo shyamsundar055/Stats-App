@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import coronavirus from './images/coronavirus.png'
+import coronavirus from './coronavirus.png'
 import './App.css';
 import axios from 'axios';
 import Graph from './graph';
 
 function App() {
   const [countryList, setCountryList] = useState([]);
-  const [selectedCountry, setSelectedCountry] = useState("India");
+  const [selectedCountry, setSelectedCountry] = useState("World");
   const [statsData, setStatsData] = useState({});
-  const [statsHistoryData, setStatsHistoryData] = useState([]);
+  const [allCountriesStatsData, setallCountriesStatsData] = useState([]);
   const [isLoading, setLoadingState] = useState(false);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     getStatisticsData(selectedCountry);
-    //getStatisticsHistoryData();
+    getAllCountriesStatisticsData();
   }, [selectedCountry])
 
 
@@ -37,15 +37,14 @@ function App() {
 
   }
 
-  function getStatisticsHistoryData() {
-    axios.get("https://covid-193.p.rapidapi.com/history?country=india", {
+  function getAllCountriesStatisticsData() {
+    axios.get("https://covid-193.p.rapidapi.com/statistics", {
       "headers": {
         "x-rapidapi-host": "covid-193.p.rapidapi.com",
         "x-rapidapi-key": "0c1bda6b16mshf44500f863dd2e0p10037cjsn7c2afcb3895f"
       }
     }).then(res => {
-      //console.log(res.data.response);
-      setStatsHistoryData(res.data.response);
+      setallCountriesStatsData(res.data.response);
 
     }).catch(err => {
       console.log(err);
@@ -60,7 +59,6 @@ function App() {
         "x-rapidapi-key": "0c1bda6b16mshf44500f863dd2e0p10037cjsn7c2afcb3895f"
       }
     }).then(res => {
-      //console.log(res.data.response);
       setCountryList(res.data.response);
 
     }).catch(err => {
@@ -70,7 +68,6 @@ function App() {
 
   const changeSelectedCountry = (event) => {
     setSelectedCountry(event.target.value);
-    //console.log(event.target.value);
   }
 
   return (
@@ -80,18 +77,20 @@ function App() {
           <div className="container d-flex justify-content-center">
             <div className="row">
               <div className="col-sm-12 text-center">
-                <h3 className="display-4">
-                  <img src={coronavirus} width="60" height="60" />&nbsp;
-                  <span className="align-bottom">Coronavirus Statistics</span>
+                <h3 className="display-4" style={{ fontSize: "3.0rem" }}>
+                  <img alt="Covid-19" src={coronavirus} width="60" height="60" />&nbsp;
+                  <span className="align-bottom">
+                    Coronavirus Statistics
+                  </span>
                 </h3>
-                <br />
               </div>
             </div>
           </div>
           {Object.keys(statsData).length > 0 ?
             <div className="container-fluid">
               <div className="row">
-                <div className="col-md-12 text-center">
+                <div className="col-md-6 text-center">
+                  <br />
                   <div className="d-flex justify-content-center">
                     <select className="form-control" value={selectedCountry} onChange={changeSelectedCountry} style={{ width: "250px" }}>
                       {
@@ -115,7 +114,6 @@ function App() {
                   <br />
                   <h2 className="display-4">Deaths <br /><span style={{ color: "rgb(255, 38, 27)" }}>{statsData.deaths.total}</span></h2>
                   <br />
-                  <br />
                   <div className="container">
                     <div className="row">
                       <div className="col-sm">
@@ -130,11 +128,20 @@ function App() {
                     </div>
 
                   </div>
+
                 </div>
-                {/* <div className="col-md-8 text-center">
-                  
-                </div> */}
-                {/* <Graph statsHistoryData={statsHistoryData}/> */}
+                <Graph allCountriesStatsData={allCountriesStatsData} />
+              </div>
+              <div className="row">
+                <div className="col-md-12 text-center">
+                  <br />
+                  <footer className="text-center text-muted font-weight-light">
+                    <span style={{ fontSize: "12px" }} >
+                      Data provider <a href="https://api-sports.io/documentation/covid-19" target="_blank" rel="noopener noreferrer">API-SPORTS</a>&nbsp;&nbsp;|&nbsp;
+                      Created by <a href="https://github.com/shyamsundar055" target="_blank" rel="noopener noreferrer">Shyam Sundar</a>
+                    </span>
+                  </footer>
+                </div>
               </div>
             </div>
 
