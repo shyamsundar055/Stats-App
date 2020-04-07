@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "156f8f5a3f7c8f85a84ae442275192a6",
+    "revision": "651251ecfbe016c21b8f07566964de83",
     "url": "/Stats-App/index.html"
   },
   {
-    "revision": "9f9436007037b62ecc76",
-    "url": "/Stats-App/static/css/main.5053d53a.chunk.css"
+    "revision": "979b0d905457c5c5257c",
+    "url": "/Stats-App/static/css/main.c3b4ad73.chunk.css"
   },
   {
     "revision": "92e05bbcbd77d8b0123a",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Stats-App/static/js/2.631bb787.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9f9436007037b62ecc76",
-    "url": "/Stats-App/static/js/main.95942ed0.chunk.js"
+    "revision": "979b0d905457c5c5257c",
+    "url": "/Stats-App/static/js/main.fb543c31.chunk.js"
   },
   {
     "revision": "05a22202e429123df19e",
