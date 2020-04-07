@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import * as d3 from 'd3'
 import randomColor from 'randomcolor'
 
-function Graph(props) {
+function StatsDataGraph(props) {
     const d3Container = useRef(null);
 
     useEffect(() => {
@@ -126,4 +126,4 @@ function Graph(props) {
     )
 }
 
-export default Graph
+export default StatsDataGraph
