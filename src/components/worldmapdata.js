@@ -134,7 +134,7 @@ function WorldMapData(props) {
                                 <td style={{ width: "20%" }}>100-999</td>
                                 <td style={{ width: "20%" }}>1000-49999</td>
                                 <td style={{ width: "20%" }}>50000-99999</td>
-                                <td style={{ width: "20%" }}>>=100000</td>
+                                <td style={{ width: "20%" }}>>=100000</td> 
                             </tr>
                         </tbody>
                     </table>

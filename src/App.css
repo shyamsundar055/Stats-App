@@ -444,7 +444,7 @@ body {
 	  font-size: 0.75em;
 	  border-spacing: 2px;
 	  border-collapse: separate;
-	  border: none;
+	  border: none; 
   }
 
   .table td {

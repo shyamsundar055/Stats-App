@@ -88,7 +88,7 @@ function App() {
         !isLoading ?
           <>
             {
-              Object.keys(statsData).length > 0 ?
+              Object.keys(statsData).length > 0 ? 
                 <>
                   <Header />
                   <WorldMapData allCountriesStatsData={allCountriesStatsData} />
