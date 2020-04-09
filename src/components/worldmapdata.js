@@ -134,11 +134,11 @@ function WorldMapData(props) {
                     <table className="table">
                         <tbody>
                             <tr>
+                                <td style={{ backgroundColor: "green" }}></td>
+                                <td style={{ backgroundColor: "blue" }}></td>
                                 <td style={{ backgroundColor: "#FFD0C2" }}></td>
-                                <td style={{ backgroundColor: "#FF8A83" }}></td>
-                                <td style={{ backgroundColor: "#D65F59" }}></td>
-                                <td style={{ backgroundColor: "#C23210" }}></td>
-                                <td style={{ backgroundColor: "#991101" }}></td>
+                                <td style={{ backgroundColor: "orange" }}></td>
+                                <td style={{ backgroundColor: "red" }}></td>
                             </tr>
                             <tr>
                                 <td style={{ width: "20%" }}>0-99</td>

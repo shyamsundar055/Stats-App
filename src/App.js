@@ -90,13 +90,13 @@ function App() {
             {
               Object.keys(statsData).length > 0 ? 
                 <>
-                  <Header />
-                  <WorldMapData allCountriesStatsData={allCountriesStatsData} />
+                  <Header /> 
                   <StatsData selectedCountry={selectedCountry}
                     countryList={countryList}
                     statsData={statsData}
                     changeSelectedCountry={changeSelectedCountry}
                     allCountriesStatsData={allCountriesStatsData} /> 
+                  <WorldMapData allCountriesStatsData={allCountriesStatsData} />
                   <Footer />
                 </>
                 : ""
