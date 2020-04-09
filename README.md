@@ -1,6 +1,8 @@
 Country wise coronavirus(covid-19) statistics data to check number of active cases, deaths, recovered + World map(Visible only on medium and large screen devices).
 
-This project was React Js, Bootstrap CSS, D3js and TopoJson for map geometries.
+This project was developed using React Js, Bootstrap CSS, D3js and TopoJson for map geometries.
+
+The coronavirus(covid-19) statistics data is provided by [API-SPORTS](https://api-sports.io/documentation/covid-19) which is free.
 
 ## Available Scripts
 
