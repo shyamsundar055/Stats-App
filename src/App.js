@@ -7,6 +7,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Loader from './components/loader';
 import StatsData from './components/statsdata';
+import WorldMapData from './components/worldmapdata';
 
 
 function App() {
@@ -75,8 +76,8 @@ function App() {
       console.log(err);
     });
 
-  }
-
+  } 
+  
   const changeSelectedCountry = (event) => {
     setSelectedCountry(event.target.value);
   }
@@ -90,11 +91,12 @@ function App() {
               Object.keys(statsData).length > 0 ?
                 <>
                   <Header />
+                  <WorldMapData allCountriesStatsData={allCountriesStatsData} />
                   <StatsData selectedCountry={selectedCountry}
                     countryList={countryList}
                     statsData={statsData}
                     changeSelectedCountry={changeSelectedCountry}
-                    allCountriesStatsData={allCountriesStatsData} />
+                    allCountriesStatsData={allCountriesStatsData} /> 
                   <Footer />
                 </>
                 : ""
