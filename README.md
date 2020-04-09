@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Country wise coronavirus(covid-19) statistics data to check number of active cases, deaths, recovered + World map(Visible only on medium and large screen devices).
+
+This project was React Js, Bootstrap CSS, D3js and TopoJson for map geometries.
 
 ## Available Scripts
 
