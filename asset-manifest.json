@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Stats-App/static/css/main.34ff92e8.chunk.css",
-    "main.js": "/Stats-App/static/js/main.62d42dd5.chunk.js",
-    "main.js.map": "/Stats-App/static/js/main.62d42dd5.chunk.js.map",
+    "main.js": "/Stats-App/static/js/main.4b49664a.chunk.js",
+    "main.js.map": "/Stats-App/static/js/main.4b49664a.chunk.js.map",
     "runtime-main.js": "/Stats-App/static/js/runtime-main.351f480d.js",
     "runtime-main.js.map": "/Stats-App/static/js/runtime-main.351f480d.js.map",
     "static/js/2.437ce389.chunk.js": "/Stats-App/static/js/2.437ce389.chunk.js",
     "static/js/2.437ce389.chunk.js.map": "/Stats-App/static/js/2.437ce389.chunk.js.map",
     "index.html": "/Stats-App/index.html",
-    "precache-manifest.0c2c403675db313514f56804d081ff84.js": "/Stats-App/precache-manifest.0c2c403675db313514f56804d081ff84.js",
+    "precache-manifest.0af3b43e62f0b1b9909df61699242bbe.js": "/Stats-App/precache-manifest.0af3b43e62f0b1b9909df61699242bbe.js",
     "service-worker.js": "/Stats-App/service-worker.js",
     "static/css/main.34ff92e8.chunk.css.map": "/Stats-App/static/css/main.34ff92e8.chunk.css.map",
     "static/js/2.437ce389.chunk.js.LICENSE.txt": "/Stats-App/static/js/2.437ce389.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.351f480d.js",
     "static/js/2.437ce389.chunk.js",
     "static/css/main.34ff92e8.chunk.css",
-    "static/js/main.62d42dd5.chunk.js"
+    "static/js/main.4b49664a.chunk.js"
   ]
 }
