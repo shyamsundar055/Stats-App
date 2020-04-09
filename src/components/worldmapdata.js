@@ -52,16 +52,27 @@ function WorldMapData(props) {
                     // else
                     //     return "#D2E3FC";
 
+                    // if (range > 100000)
+                    //     return "#991101";
+                    // else if (range >= 50000 && range <= 99999)
+                    //     return "#C23210";
+                    // else if (range >= 1000 && range <= 49999)
+                    //     return "#D65F59";
+                    // else if (range >= 100 && range <= 999)
+                    //     return "#FF8A83";
+                    // else
+                    //     return "#FFD0C2";
+
                     if (range > 100000)
-                        return "#991101";
+                        return "red";
                     else if (range >= 50000 && range <= 99999)
-                        return "#C23210";
+                        return "orange";
                     else if (range >= 1000 && range <= 49999)
-                        return "#D65F59";
-                    else if (range >= 100 && range <= 999)
-                        return "#FF8A83";
-                    else
                         return "#FFD0C2";
+                    else if (range >= 100 && range <= 999)
+                        return "blue";
+                    else
+                        return "green";
                 }
                 )
                 .attr("stroke", "#B4B1B1")
