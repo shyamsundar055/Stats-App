@@ -14,7 +14,8 @@ function StatsDataGraph(props) {
             /* Remove World,All items then sort and slice */
             allCountriesData = allCountriesData.filter((item) => { 
                 return (item.country !== "World" && item.country !== "All" && item.country !== "-Africa-" && item.country !== "-Asia-" 
-                        && item.country !== "-Europe-" && item.country !== "-North-America-" && item.country !== "-Oceania-" && item.country !== "-South-America-" && item.country !== "--") 
+                        && item.country !== "-Europe-" && item.country !== "-North-America-" && item.country !== "-Oceania-" && item.country !== "-South-America-" 
+                        && item.country !== "--" && item.country !== "--North-America-") 
         })
                 .sort(function (a, b) {
                     return b.cases.active - a.cases.active
