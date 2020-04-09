@@ -66,9 +66,9 @@ function WorldMapData(props) {
                     if (range > 100000)
                         return "red";
                     else if (range >= 50000 && range <= 99999)
-                        return "#ffc254";
+                        return "#D65F59";
                     else if (range >= 1000 && range <= 49999)
-                        return "#FFD0C2";
+                        return "rgb(255, 232, 121)";
                     else if (range >= 100 && range <= 999)
                         return "#71e3e8";
                     else
@@ -136,8 +136,8 @@ function WorldMapData(props) {
                             <tr>
                                 <td style={{ backgroundColor: "#7cdc7c" }}></td>
                                 <td style={{ backgroundColor: "#71e3e8" }}></td>
-                                <td style={{ backgroundColor: "#FFD0C2" }}></td>
-                                <td style={{ backgroundColor: "#ffc254" }}></td>
+                                <td style={{ backgroundColor: "rgb(255, 232, 121)" }}></td>
+                                <td style={{ backgroundColor: "#D65F59" }}></td>
                                 <td style={{ backgroundColor: "red" }}></td>
                             </tr>
                             <tr>
