@@ -107,7 +107,7 @@ function WorldMapData(props) {
                     );
                 })
                 .on("mousemove", function (d) {
-                    tooltip.style("top", (d3.event.pageY - 25) + "px")
+                    tooltip.style("top", (d3.event.pageY - window.innerHeight)+10 + "px")
                         .style("left", (d3.event.pageX + 10) + "px")
                 })
                 .on("mouseout", function (d, i) {
