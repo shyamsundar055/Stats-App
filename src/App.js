@@ -13,7 +13,7 @@ import WorldMapData from './components/worldmapdata';
 function App() {
 
   const [countryList, setCountryList] = useState([]);
-  const [selectedCountry, setSelectedCountry] = useState("World");
+  const [selectedCountry, setSelectedCountry] = useState("India");
   const [statsData, setStatsData] = useState({});
   const [allCountriesStatsData, setallCountriesStatsData] = useState([]);
   const [isLoading, setLoadingState] = useState(true);
@@ -43,7 +43,7 @@ function App() {
         "x-rapidapi-host": apiHost,
         "x-rapidapi-key": apiKey
       }
-    }).then(res => {
+    }).then(res => { 
       setCountryList(res.data.response);
     }).catch(err => {
       console.log(err);
