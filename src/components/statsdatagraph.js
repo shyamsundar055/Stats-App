@@ -16,7 +16,7 @@ function StatsDataGraph(props) {
                 return (item.country !== "World" && item.country !== "All" && item.country !== "-Africa-" && item.country !== "-Asia-" 
                         && item.country !== "-Europe-" && item.country !== "-North-America-" && item.country !== "-Oceania-" && item.country !== "-South-America-" 
                         && item.country !== "--" && item.country !== "--North-America-" && item.country !== "North-America" && item.country !=="Europe"
-                        && item.country !== "South-America"
+                        && item.country !== "South-America" && item.country !== "Africa" && item.country !== "Asia"
                         ) 
         })
                 .sort(function (a, b) {

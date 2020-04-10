@@ -43,7 +43,7 @@ function App() {
         "x-rapidapi-host": apiHost,
         "x-rapidapi-key": apiKey
       }
-    }).then(res => { 
+    }).then(res => {  
       setCountryList(res.data.response);
     }).catch(err => {
       console.log(err);
@@ -56,7 +56,7 @@ function App() {
         "x-rapidapi-host": apiHost,
         "x-rapidapi-key": apiKey
       }
-    }).then(res => {
+    }).then(res => { 
       setStatsData(res.data.response[0]);
     }).catch(err => {
       console.log(err);
@@ -70,7 +70,7 @@ function App() {
         "x-rapidapi-host": apiHost,
         "x-rapidapi-key": apiKey
       }
-    }).then(res => {
+    }).then(res => {  
       setallCountriesStatsData(res.data.response);
     }).catch(err => {
       console.log(err);
